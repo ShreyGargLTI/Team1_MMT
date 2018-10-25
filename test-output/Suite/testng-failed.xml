@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="login.LoginForgtPwd">
+        <methods>
+          <include name="close"/>
+          <include name="runFgtPwd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- login.LoginForgtPwd -->
+      <class name="searchFlight.SearchFlight">
+        <methods>
+          <include name="twoWaySearch" invocation-numbers="0 1 2"/>
+          <include name="oneWaySearch" invocation-numbers="1 2"/>
+          <include name="multiCitySearch"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- searchFlight.SearchFlight -->
+      <class name="login.LoginwithGoogle">
+        <methods>
+          <include name="close"/>
+          <include name="runLoginWithGoogle" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- login.LoginwithGoogle -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

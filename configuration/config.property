@@ -1,0 +1,19 @@
+BASE_URL = https://www.makemytrip.com/
+	
+FIREFOX = firefox
+CHROME = chrome
+IE = ie
+	
+PATH_CHROME_DRIVER = src\\main\\resources\\webDrivers\\chrome\\chromedriver.exe
+PATH_FIREFOX_DRIVER = src\\main\\resources\\webDrivers\\firefox\\geckodriver.exe
+PATH_IE_DRIVER = src\\main\\resources\\webDrivers\\ie\\IEDriverServer.exe
+PATH_FIREFOX = C:\\Program Files\\Mozilla Firefox\\firefox.exe
+	
+KEY_CHROME_DRIVER = webdriver.chrome.driver
+KEY_FIREFOX_DRIVER = webdriver.gecko.driver
+KEY_IE_DRIVER = webdriver.ie.driver
+KEY_FIREFOX_BIN = webdriver.firefox.bin
+	
+PATH_EXCEL_FRGT_PASS = src\\main\\resources\\Excel\\parameters_frtpwd.xlsx
+PATH_EXCEL_LOGIN = src\\main\\resources\\Excel\\parameters_login.xlsx
+PATH_EXCEL_SIGNUP = src\\main\\resources\\Excel\\parameters_signup.xlsx
