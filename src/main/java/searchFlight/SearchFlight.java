@@ -47,7 +47,7 @@ public class SearchFlight
 		{
 			oneWayPage.selectFlight("6AM-12PM");
 
-			bookFlight(getPassengerNo(passengers));
+//			bookFlight(getPassengerNo(passengers));
 		}
 
 	}
@@ -73,7 +73,7 @@ public class SearchFlight
 		flag = twoWayPage.searchFlight(from, to, sDate, eDate, passengers,
 				classs);
 
-		bookFlight(getPassengerNo(passengers));
+//		bookFlight(getPassengerNo(passengers));
 		System.out.println(flag);
 
 		if (!flag)
@@ -124,38 +124,38 @@ public class SearchFlight
 		}
 	}
 
-	private void bookFlight(int[] passNo) throws InterruptedException
-	{
-		BookingGuestPOM bookPage = PageFactory.initElements(driver,
-				BookingGuestPOM.class);
-		bookPage.bookFlight("dfghdfthdfg@gmail.com");
-
-		BookingGuestPOM1 bookPage1 = PageFactory.initElements(driver,
-				BookingGuestPOM1.class);
-
-		bookPage1.adultDetails("name", "Lname", passNo[0], passNo[1],
-				passNo[2]);
-		
-		bookPage1.childDetails("name", "Lname", passNo[0], passNo[1],
-				passNo[2], "5");
-		
-		bookPage1.infantDetails("name", "Lname", passNo[0], passNo[1],
-				passNo[2]);
-	}
-
-	private int[] getPassengerNo(String passengers)
-	{
-		int[] res = new int[3];
-
-		String[] arr = passengers.split("-");
-
-		for (int i = 0; i < res.length; i++)
-		{
-			res[i] = Integer.parseInt(arr[i]);
-		}
-
-		return res;
-	}
+//	private void bookFlight(int[] passNo) throws InterruptedException
+//	{
+//		BookingGuestPOM bookPage = PageFactory.initElements(driver,
+//				BookingGuestPOM.class);
+//		bookPage.bookFlight("dfghdfthdfg@gmail.com");
+//
+//		BookingGuestPOM1 bookPage1 = PageFactory.initElements(driver,
+//				BookingGuestPOM1.class);
+//
+//		bookPage1.adultDetails("name", "Lname", passNo[0], passNo[1],
+//				passNo[2]);
+//		
+//		bookPage1.childDetails("name", "Lname", passNo[0], passNo[1],
+//				passNo[2], "5");
+//		
+//		bookPage1.infantDetails("name", "Lname", passNo[0], passNo[1],
+//				passNo[2]);
+//	}
+//
+//	private int[] getPassengerNo(String passengers)
+//	{
+//		int[] res = new int[3];
+//
+//		String[] arr = passengers.split("-");
+//
+//		for (int i = 0; i < res.length; i++)
+//		{
+//			res[i] = Integer.parseInt(arr[i]);
+//		}
+//
+//		return res;
+//	}
 	
 	public void checkPop()
 	{

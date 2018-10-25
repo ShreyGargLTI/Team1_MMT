@@ -7,7 +7,7 @@
 			<class name="login.LoginwithGoogle" />
 			<class name="login.LoginForgtPwd" />
 			<class name="signup.Signup" />
-			<class name="searchFlight.SearchFlight" />
+			<class name="searchFlight.SearchFlight" />8
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
